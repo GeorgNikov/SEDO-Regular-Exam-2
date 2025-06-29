@@ -3,6 +3,9 @@ pipeline {
 
     stages {
         stage('Checkout the repository') {
+            when {
+                branch 'main'
+            }
             steps {
                 checkout scm
             }
