@@ -15,10 +15,10 @@ jobs:
     - name: Check the repository
       uses: actions/checkout@v4
       
-    - name: Setup .NET ver.6
+    - name: Setup .NET ver.8
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: 8.0.x
         
     - name: Restore dependencies
       run: dotnet restore
